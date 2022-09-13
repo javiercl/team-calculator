@@ -1,9 +1,9 @@
 import React from 'react'
 import './Design.css'
 
-const Display = () => {
+const Display = (res) => {
   return (
-    <div>Calculator display</div>
+    <div class="display">{res.result}</div>
   )
 }
 
