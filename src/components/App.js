@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import Display from "./Display";
+import NumberBtns from "./NumberBtns";
+import OperatorBtns from "./OperatorBtns";
+import ResultBtns from "./ResultBtns";
+import SpecialBtns from "./SpecialBtns";
 
 function App() {
+
+  const [values, setValues] = useState({
+    'result' : '0',   // valor que va en el display
+    'value' : '',     // número actual
+    'value_aux' : 0,  // valor 2 de una operacion
+    'operator' : '',  // operador del calculo
+    'number' : 0      // bandera indica si empezamos un nuevo número
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="bodycalc">
+      <Display values={values} />
+      <NumberBtns values={values} setValues={setValues} />
+      <OperatorBtns values={values} setValues={setValues} />
+      <ResultBtns values={values} setValues={setValues} />
+      <SpecialBtns values={values} setValues={setValues} />
     </div>
   );
 }
