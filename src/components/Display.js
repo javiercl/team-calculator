@@ -1,10 +1,11 @@
 import React from 'react'
 import './Design.css'
 
-const Display = (res) => {
+const Display = () => {
   return (
-    <div class="display">{res.result}</div>
+    <div>Display</div>
   )
 }
 
 export default Display
+

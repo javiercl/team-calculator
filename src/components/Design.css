@@ -1,3 +1,19 @@
 .bodycalc {
-  text-align: center;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  border: 2px solid black;
 }
+
+.display{
+  background-color: beige;
+}
+
+.numericbtn {
+  background-color:aquamarine;
+}
+
+.equalbtn {
+  background-color:blue;
+}
+
