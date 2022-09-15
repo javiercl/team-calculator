@@ -6,7 +6,10 @@ import OperatorBtns from "./OperatorBtns";
 import ResultBtns from "./ResultBtns";
 import SpecialBtns from "./SpecialBtns";
 
+
 function App() {
+
+  
 
   const [values, setValues] = useState({
     'result' : '0',   // valor que va en el display
@@ -18,11 +21,15 @@ function App() {
 
   return (
     <div class="bodycalc">
+      <div className='main-container' >
+
       <Display values={values} />
       <NumberBtns values={values} setValues={setValues} />
       <OperatorBtns values={values} setValues={setValues} />
       <ResultBtns values={values} setValues={setValues} />
       <SpecialBtns values={values} setValues={setValues} />
+
+      </div>
     </div>
   );
 }

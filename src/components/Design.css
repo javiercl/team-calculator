@@ -1,3 +1,28 @@
 .bodycalc {
   text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Display{
+  background-color: brown;
+  height: 70px;
+  width: 400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color : white;
+  font-weight: bold;
+  padding:11px 30px 11px 11px;
+  margin: 1px solid #888;
+  overflow: hidden;
 }

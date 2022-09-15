@@ -1,10 +1,12 @@
-import React from 'react'
-import './Design.css'
+import React from 'react';
+import './Design.css';
 
-const Display = () => {
-  return (
-    <div>Calculator display</div>
-  )
-}
+const Display = (props) => (
+  
+    <div className='Display'>
+      { props.values.result }
+    </div>
+  );
 
-export default Display
+
+export default Display;
