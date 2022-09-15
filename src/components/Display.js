@@ -3,7 +3,7 @@ import './Design.css'
 
 const Display = () => {
   return (
-    <div>Display</div>
+    <div>Display for calculator</div>
   )
 }
 
