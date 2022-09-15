@@ -1,23 +1,12 @@
 import React from 'react';
 import './Design.css';
 
-<<<<<<< HEAD
-const Display = ({ Display}) => (
+const Display = (props) => (
   
     <div className='Display'>
-      { Display }
+      { props.values.result }
     </div>
   );
 
 
 export default Display;
-=======
-const Display = () => {
-  return (
-    <div>Display for calculator</div>
-  )
-}
-
-export default Display
-
->>>>>>> 2b85ad74d6a31691057dbc0637667353a787074a

@@ -8,13 +8,9 @@ import SpecialBtns from "./SpecialBtns";
 
 
 function App() {
-<<<<<<< HEAD
 
   
 
-=======
-  
->>>>>>> 2b85ad74d6a31691057dbc0637667353a787074a
   const [values, setValues] = useState({
     'result' : '0',   // valor que va en el display
     'value' : '',     // número actual
