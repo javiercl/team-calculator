@@ -1,4 +1,5 @@
 .bodycalc {
+<<<<<<< HEAD
   text-align: center;
     display:flex;
     flex-wrap: wrap;
@@ -25,4 +26,25 @@
   padding:11px 30px 11px 11px;
   margin: 1px solid #888;
   overflow: hidden;
+=======
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  border: 2px solid black;
+}
+
+.display{
+  background-color: beige;
+}
+
+.numericbtn {
+  background-color:aquamarine;
+}
+
+.equalbtn {
+  background-color:blue;
+}
+.numericbtn{
+  border-color: blue;
+>>>>>>> 2b85ad74d6a31691057dbc0637667353a787074a
 }
