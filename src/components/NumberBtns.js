@@ -3,7 +3,7 @@ import './Design.css'
 
 const NumberBtns = () => {
   return (
-    <div>Numbers buttons logic</div>
+    <div>Numbers buttons logiccc</div>
   )
 }
 
