@@ -3,7 +3,7 @@ import './Design.css';
 
 const Display = (props) => (
   
-    <div className='Display'>
+    <div className='grid-item-display'>
       { props.values.result }
     </div>
   );

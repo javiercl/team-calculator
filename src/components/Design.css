@@ -1,28 +1,104 @@
-.bodycalc {
-  text-align: center;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+body{
+  background-color: rgba(179, 156, 125, 1);
 }
-.Display{
-  background-color: brown;
-  height: 70px;
+
+.grid-container {
   width: 400px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
+  margin: auto;
+  display: grid;
+  border: solid black 1px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 40px black;
+}
+
+.grid-item-number{
+  display: grid;
+  border: solid black 1px;
   align-items: center;
-  color : white;
-  font-weight: bold;
-  padding:11px 30px 11px 11px;
-  margin: 1px solid #888;
-  overflow: hidden;
+  justify-items: center;
+  background-color: rgba(207, 209, 208, 1);
+  font-weight: 500;
+  font-size: 40px;
+}
+
+
+.grid-item-number:hover, .grid-item-cero:hover, .grid-item-borrador:hover{
+  background-color: rgb(225, 238, 231);
+  cursor: pointer;
+}
+
+.grid-item-operadores:hover, .grid-item-igual:hover {
+  background-color: rgb(247, 166, 96);
+  cursor: pointer;
+}
+
+
+.grid-item-operadores {
+  display: grid;
+  border: solid black 1px;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(249, 137, 42, 1);
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+}
+
+.grid-item-igual {
+  display: grid;
+  border: solid black 1px;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(249, 137, 42, 1);
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  border-bottom-right-radius: 10px;
+}
+
+.grid-item-borrador{
+  display: grid;
+  border: solid black 1px;
+  align-items: center;
+  justify-items: center;
+  grid-column-start: 1; 
+  grid-column-end: 4; 
+  background-color: rgba(207, 209, 208, 1);
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.grid-item-cero{
+  display: grid;
+  border: solid black 1px;
+  align-items: center;
+  justify-items: center;
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  background-color: rgba(207, 209, 208, 1);
+  font-weight: 500;
+  font-size: 40px;
+  border-bottom-left-radius: 10px;
+}
+
+.grid-item-display{
+  display: grid;
+  border: solid black 1px;
+  align-items: flex-end;
+  justify-items: flex-end;
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  font-weight: 300;
+  font-size: 70px;
+  background-color: rgba(119, 97, 66, 1);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
 }
