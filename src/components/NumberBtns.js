@@ -24,29 +24,18 @@ const NumberBtns = ({values, setValues}) => {
   }
   return (
     <>
-    <div class="fila">
-      <button class="btnNum" key="btn7" onClick={clic}>7</button>
-      <button class="btnNum" key="btn8" onClick={clic}>8</button>
-      <button class="btnNum" key="btn9" onClick={clic}>9</button>
-    </div>
-
-    <div class="fila">
-      <button class="btnNum" key="btn4" onClick={clic}>4</button>
-      <button class="btnNum" key="btn5" onClick={clic}>5</button>
-      <button class="btnNum" key="btn6" onClick={clic}>6</button>
-    </div>
-
-    <div class="fila">
-      <button class="btnNum" key="btn1" onClick={clic}>1</button>
-      <button class="btnNum" key="btn2" onClick={clic}>2</button>
-      <button class="btnNum" key="btn3" onClick={clic}>3</button>
-    </div>
-
-    <div class="fila">
-      <button class="btnNum" key="btn0" onClick={clic}>0</button>
-    </div>
-
+      <div className='grid-item-number' key="btn9" onClick={clic} >9</div>
+      <div className='grid-item-number' key="btn8" onClick={clic} >8</div>
+      <div className='grid-item-number'key="btn7"  onClick={clic}>7</div>
+      <div className='grid-item-number' key="btn6" onClick={clic}>6</div>
+      <div className='grid-item-number' key="btn5" onClick={clic}>5</div>
+      <div className='grid-item-number' key="btn4" onClick={clic}>4</div>
+      <div className='grid-item-number' key="btn3" onClick={clic}>3</div>
+      <div className='grid-item-number' key="btn2" onClick={clic}>2</div>
+      <div className='grid-item-number' key="btn1" onClick={clic}>1</div>
+      <div className='grid-item-cero' key="btn0"   onClick={clic}>0</div>
       </>
+      
       
   )
 }
