@@ -9,7 +9,7 @@ const NumberBtns = ({values, setValues}) => {
         'result':values.value + e.target.textContent,
         'value':values.value+e.target.textContent,
         'value_aux': values.value_aux,
-        'operator': value.number,
+        'operator': values.number,
         'number':values.number,
       });
 

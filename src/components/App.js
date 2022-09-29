@@ -4,7 +4,7 @@ import Display from "./Display";
 import NumberBtns from "./NumberBtns";
 import OperatorBtns from "./OperatorBtns";
 import ResultBtns from "./ResultBtns";
-import SpecialBtns from "./SpecialBtns";
+import BorradorBtn from "./BorradorBtn";
 
 
 function App() {
@@ -20,15 +20,19 @@ function App() {
   });
 
   return (
-    <div class="bodycalc">
-      <div className='main-container' >
-
+    <div class="grid-container">
       <Display values={values} />
-      <NumberBtns values={values} setValues={setValues} />
-      <OperatorBtns values={values} setValues={setValues} />
-      <ResultBtns values={values} setValues={setValues} />
-      <SpecialBtns values={values} setValues={setValues} />
-
+      <div className='grid-panel-numeros'>
+        <NumberBtns values={values} setValues={setValues} />
+      </div>
+      <div className='grid-panel-borrador'>
+        <BorradorBtn values={values} setValues={setValues}/> 
+      </div>
+      <div className='grid-panel-igual'>
+        <ResultBtns values={values} setValues={setValues} />
+      </div>
+      <div className='grid-panel-operadores'>
+        <OperatorBtns values={values} setValues={setValues} />
       </div>
     </div>
   );

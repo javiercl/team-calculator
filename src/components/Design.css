@@ -9,11 +9,7 @@ body{
 .grid-container {
   width: 400px;
   margin: auto;
-  display: grid;
   border: solid black 1px;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px 100px;
-  border-radius: 10px;
   box-shadow: 5px 5px 40px black;
 }
 
@@ -27,13 +23,25 @@ body{
   font-size: 40px;
 }
 
+.grid-panel-numeros{
+  display: grid;
+  grid-template-rows: 80px 80px 80px 80px;
+  grid-template-columns: 133px 133px 134px;
+  
+}
 
-.grid-item-number:hover, .grid-item-cero:hover, .grid-item-borrador:hover{
+
+.grid-item-number:hover, .grid-item-cero:hover{
   background-color: rgb(225, 238, 231);
   cursor: pointer;
 }
 
-.grid-item-operadores:hover, .grid-item-igual:hover {
+.grid-item-borrador:hover{
+  background-color:rgb(194, 92, 66);
+  cursor: pointer;
+}
+
+.grid-item-operadores:hover{
   background-color: rgb(247, 166, 96);
   cursor: pointer;
 }
@@ -50,19 +58,47 @@ body{
   color: white;
 }
 
+.grid-panel-operadores{
+  display: grid;
+  grid-template-rows: 75px;
+  grid-template-columns: 100px 100px 100px 100px;
+  
+}
+
 .grid-item-igual {
   display: grid;
   border: solid black 1px;
   align-items: center;
   justify-items: center;
-  background-color: rgba(249, 137, 42, 1);
+  background-color: rgb(14, 56, 172);
   font-weight: 500;
   font-size: 40px;
   color: white;
-  border-bottom-right-radius: 10px;
+}
+
+.grid-item-igual:hover {
+  background-color: rgb(57, 95, 199);
+  cursor: pointer;
 }
 
 .grid-item-borrador{
+  display: grid;
+  border: solid black 1px;
+  align-items: center;
+  justify-items: center;
+  grid-column-start: 1; 
+  grid-column-end: 4; 
+  background-color: rgb(233, 52, 6);
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.grid-panel-igual, .grid-panel-borrador{
+  display: grid;
+  
+}
+
+.grid-item-cero{
   display: grid;
   border: solid black 1px;
   align-items: center;
@@ -74,19 +110,6 @@ body{
   font-size: 40px;
 }
 
-.grid-item-cero{
-  display: grid;
-  border: solid black 1px;
-  align-items: center;
-  justify-items: center;
-  grid-column-start: 1; 
-  grid-column-end: 3; 
-  background-color: rgba(207, 209, 208, 1);
-  font-weight: 500;
-  font-size: 40px;
-  border-bottom-left-radius: 10px;
-}
-
 .grid-item-display{
   display: grid;
   border: solid black 1px;
@@ -95,10 +118,9 @@ body{
   grid-column-start: 1; 
   grid-column-end: 5; 
   font-weight: 300;
-  font-size: 70px;
+  font-size: 50px;
   background-color: rgba(119, 97, 66, 1);
   color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  
+  width: 398px;    
+  height: 80px;
 }
