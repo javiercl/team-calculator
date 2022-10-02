@@ -11,7 +11,7 @@ function App() {
 
   
 
-  const [values, setValues] = useState({
+  const  [ values, setValues] = useState({
     'result' : '0',   // valor que va en el display
     'value' : '',     // número actual
     'value_aux' : 0,  // valor 2 de una operacion
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div class="grid-container">
-      <Display values={values} />
+      < Display values={ values } />
       <div className='grid-panel-numeros'>
         <NumberBtns values={values} setValues={setValues} />
       </div>

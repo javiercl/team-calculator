@@ -123,4 +123,5 @@ body{
   color: white;
   width: 398px;    
   height: 80px;
+  overflow: hidden;
 }
